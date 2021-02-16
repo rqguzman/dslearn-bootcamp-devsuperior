@@ -28,3 +28,8 @@ INSERT INTO tb_resource (title, description, position, img_Uri, type, offer_id) 
 INSERT INTO tb_resource (title, description, position, img_Uri, type, offer_id) VALUES ('CSS Learning Trail', 'Where the magic happens', 2, 'shorturl.at/ruxF8', 2, 1);
 INSERT INTO tb_resource (title, description, position, img_Uri, type, offer_id) VALUES ('Forum', 'Got questions?', 3, 'shorturl.at/ruxF8', 3, 1);
 INSERT INTO tb_resource (title, description, position, img_Uri, type, offer_id) VALUES ('Lives', 'Learn from the best', 4, 'shorturl.at/ruxF8', 4, 1);
+
+-- TEMPLATE SECTIONS
+INSERT INTO tb_section (title, description, position, img_Uri, resource_id, prerequisite_id) VALUES ('Chapter 01', 'HTML history', 1, 'shorturl.at/ruxF8', 1, null);
+INSERT INTO tb_section (title, description, position, img_Uri, resource_id, prerequisite_id) VALUES ('Chapter 02', 'HTML basic concepts', 1, 'shorturl.at/ruxF8', 1, 1);
+INSERT INTO tb_section (title, description, position, img_Uri, resource_id, prerequisite_id) VALUES ('Chapter 03', 'Your first HTML web page', 1, 'shorturl.at/ruxF8', 1, 2);
