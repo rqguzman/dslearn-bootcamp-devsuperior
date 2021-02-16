@@ -33,3 +33,7 @@ INSERT INTO tb_resource (title, description, position, img_Uri, type, offer_id) 
 INSERT INTO tb_section (title, description, position, img_Uri, resource_id, prerequisite_id) VALUES ('Chapter 01', 'HTML history', 1, 'shorturl.at/ruxF8', 1, null);
 INSERT INTO tb_section (title, description, position, img_Uri, resource_id, prerequisite_id) VALUES ('Chapter 02', 'HTML basic concepts', 1, 'shorturl.at/ruxF8', 1, 1);
 INSERT INTO tb_section (title, description, position, img_Uri, resource_id, prerequisite_id) VALUES ('Chapter 03', 'Your first HTML web page', 1, 'shorturl.at/ruxF8', 1, 2);
+
+-- TEMPLATE ENROLLMENTS
+INSERT INTO tb_enrollment (user_id, offer_id, enroll_Moment, refund_Moment, is_Available, is_Only_Update) VALUES (1, 1, TIMESTAMP WITH TIME ZONE '2021-02-16T13:00:00Z', null, true, false);
+INSERT INTO tb_enrollment (user_id, offer_id, enroll_Moment, refund_Moment, is_Available, is_Only_Update) VALUES (2, 1, TIMESTAMP WITH TIME ZONE '2021-02-17T18:30:00Z', null, true, false);
