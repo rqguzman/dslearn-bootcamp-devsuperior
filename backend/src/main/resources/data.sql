@@ -22,3 +22,9 @@ INSERT INTO tb_course (name, img_Uri, img_Gray_Uri) VALUES ('Web development boo
 -- TEMPLATE OFFERS
 INSERT INTO tb_offer (edition, start_Moment, end_Moment, course_id) VALUES ('1.0', TIMESTAMP WITH TIME ZONE '2021-02-16T03:00:00Z', TIMESTAMP WITH TIME ZONE '2022-02-16T03:00:00Z', 1);
 INSERT INTO tb_offer (edition, start_Moment, end_Moment, course_id) VALUES ('2.0', TIMESTAMP WITH TIME ZONE '2021-04-16T03:00:00Z', TIMESTAMP WITH TIME ZONE '2022-04-16T03:00:00Z', 1);
+
+-- TEMPLATE RESOURCES
+INSERT INTO tb_resource (title, description, position, img_Uri, type, offer_id) VALUES ('HTML5 Learning Trail', 'Every journey begins with a single step', 1, 'shorturl.at/ruxF8', 2, 1);
+INSERT INTO tb_resource (title, description, position, img_Uri, type, offer_id) VALUES ('CSS Learning Trail', 'Where the magic happens', 2, 'shorturl.at/ruxF8', 2, 1);
+INSERT INTO tb_resource (title, description, position, img_Uri, type, offer_id) VALUES ('Forum', 'Got questions?', 3, 'shorturl.at/ruxF8', 3, 1);
+INSERT INTO tb_resource (title, description, position, img_Uri, type, offer_id) VALUES ('Lives', 'Learn from the best', 4, 'shorturl.at/ruxF8', 4, 1);
