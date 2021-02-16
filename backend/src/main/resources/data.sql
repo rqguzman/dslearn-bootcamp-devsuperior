@@ -15,3 +15,10 @@ INSERT INTO tb_user_role (user_id, role_id) VALUES (2, 2);
 INSERT INTO tb_user_role (user_id, role_id) VALUES (3, 1);
 INSERT INTO tb_user_role (user_id, role_id) VALUES (3, 2);
 INSERT INTO tb_user_role (user_id, role_id) VALUES (3, 3);
+
+-- TEMPLATE COURSES
+INSERT INTO tb_course (name, img_Uri, img_Gray_Uri) VALUES ('Web development bootcamp', 'shorturl.at/lDFIZ', 'shorturl.at/ruxF8');
+
+-- TEMPLATE OFFERS
+INSERT INTO tb_offer (edition, start_Moment, end_Moment, course_id) VALUES ('1.0', TIMESTAMP WITH TIME ZONE '2021-02-16T03:00:00Z', TIMESTAMP WITH TIME ZONE '2022-02-16T03:00:00Z', 1);
+INSERT INTO tb_offer (edition, start_Moment, end_Moment, course_id) VALUES ('2.0', TIMESTAMP WITH TIME ZONE '2021-04-16T03:00:00Z', TIMESTAMP WITH TIME ZONE '2022-04-16T03:00:00Z', 1);
