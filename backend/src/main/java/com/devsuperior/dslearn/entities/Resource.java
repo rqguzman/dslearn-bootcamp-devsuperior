@@ -32,7 +32,10 @@ public class Resource implements Serializable {
     public Resource() {
     }
 
-    public Resource(Long id, String title, String description, Integer position, String imgUri, ResourceType type, Offer offer) {
+    public Resource(Long id, String title, String description,
+                    Integer position, String imgUri,
+                    ResourceType type, Offer offer) {
+
         this.id = id;
         this.title = title;
         this.description = description;
@@ -96,6 +99,10 @@ public class Resource implements Serializable {
 
     public void setOffer(Offer offer) {
         this.offer = offer;
+    }
+
+    public List<Section> getSections() {
+        return sections;
     }
 
     @Override

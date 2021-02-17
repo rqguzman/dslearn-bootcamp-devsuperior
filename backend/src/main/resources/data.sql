@@ -60,4 +60,14 @@ INSERT INTO tb_notification (text, moment, is_Read, route, user_id) VALUES ('Tas
 -- TEMPLATE DELIVERIES
 INSERT INTO tb_deliver (uri, moment, status, feedback, correct_Count, lesson_id, user_id, offer_id) VALUES ('https://github.com/devsuperior/bds-dslearn', TIMESTAMP WITH TIME ZONE '2021-02-08T23:59:59Z', 1, null, null, 4, 1, 1);
 
+-- TEMPLATE TOPICS
+INSERT INTO tb_topic (title, body, moment, user_id, offer_id, lesson_id) VALUES ('Topic #1', 'Topic`s body #1', TIMESTAMP WITH TIME ZONE '2021-02-12T15:00:00Z', 1, 1, 1);
+INSERT INTO tb_topic (title, body, moment, user_id, offer_id, lesson_id) VALUES ('Topic #2', 'Topic`s body #2', TIMESTAMP WITH TIME ZONE '2021-02-13T15:00:00Z', 2, 1, 1);
+INSERT INTO tb_topic (title, body, moment, user_id, offer_id, lesson_id) VALUES ('Topic #3', 'Topic`s body #3', TIMESTAMP WITH TIME ZONE '2021-02-14T15:00:00Z', 2, 1, 1);
+INSERT INTO tb_topic (title, body, moment, user_id, offer_id, lesson_id) VALUES ('Topic #4', 'Topic`s body #4', TIMESTAMP WITH TIME ZONE '2021-02-15T15:00:00Z', 1, 1, 2);
+INSERT INTO tb_topic (title, body, moment, user_id, offer_id, lesson_id) VALUES ('Topic #5', 'Topic`s body #5', TIMESTAMP WITH TIME ZONE '2021-02-16T15:00:00Z', 1, 1, 2);
+INSERT INTO tb_topic (title, body, moment, user_id, offer_id, lesson_id) VALUES ('Topic #6', 'Topic`s body #6', TIMESTAMP WITH TIME ZONE '2021-02-17T15:00:00Z', 2, 1, 3);
 
+-- TEMPLATE LIKES
+INSERT INTO tb_topic_likes (topic_id, user_id) VALUES (1, 2);
+INSERT INTO tb_topic_likes (topic_id, user_id) VALUES (2, 1);
