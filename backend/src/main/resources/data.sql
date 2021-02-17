@@ -57,6 +57,7 @@ INSERT INTO tb_notification (text, moment, is_Read, route, user_id) VALUES ('Tas
 INSERT INTO tb_notification (text, moment, is_Read, route, user_id) VALUES ('Task submission feedback #2: please revise', TIMESTAMP WITH TIME ZONE '2021-02-12T18:27:40Z', true, '/offers/1/resource/1/sections/1',1);
 INSERT INTO tb_notification (text, moment, is_Read, route, user_id) VALUES ('Task submission feedback: accepted', TIMESTAMP WITH TIME ZONE '2021-02-14T23:45:00Z', true, '/offers/1/resource/1/sections/1',1);
 
-
+-- TEMPLATE DELIVERIES
+INSERT INTO tb_deliver (uri, moment, status, feedback, correct_Count, lesson_id, user_id, offer_id) VALUES ('https://github.com/devsuperior/bds-dslearn', TIMESTAMP WITH TIME ZONE '2021-02-08T23:59:59Z', 1, null, null, 4, 1, 1);
 
 
