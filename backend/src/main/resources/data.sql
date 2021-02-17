@@ -37,3 +37,20 @@ INSERT INTO tb_section (title, description, position, img_Uri, resource_id, prer
 -- TEMPLATE ENROLLMENTS
 INSERT INTO tb_enrollment (user_id, offer_id, enroll_Moment, refund_Moment, is_Available, is_Only_Update) VALUES (1, 1, TIMESTAMP WITH TIME ZONE '2021-02-16T13:00:00Z', null, true, false);
 INSERT INTO tb_enrollment (user_id, offer_id, enroll_Moment, refund_Moment, is_Available, is_Only_Update) VALUES (2, 1, TIMESTAMP WITH TIME ZONE '2021-02-17T18:30:00Z', null, true, false);
+
+-- TEMPLATE LESSONS
+INSERT INTO tb_lesson (title, position, section_id) VALUES ('Chapter 01 - Lesson 01', 1, 1);
+INSERT INTO tb_content (id, text_Content, video_Uri) VALUES (1, 'HTML & CSS for Beginners', 'https://youtu.be/tKKWBcYW19I');
+INSERT INTO tb_lesson (title, position, section_id) VALUES ('Chapter 01 - Lesson 02', 2, 1);
+INSERT INTO tb_content (id, text_Content, video_Uri) VALUES (2, 'HTML & CSS for Beginners', 'https://youtu.be/tKKWBcYW19I');
+INSERT INTO tb_lesson (title, position, section_id) VALUES ('Chapter 01 - Lesson 03', 3, 1);
+INSERT INTO tb_content (id, text_Content, video_Uri) VALUES (3, 'HTML & CSS for Beginners', 'https://youtu.be/tKKWBcYW19I');
+INSERT INTO tb_lesson (title, position, section_id) VALUES ('Chapter 01 - Task', 4, 1);
+INSERT INTO tb_task (id, description, question_Count, approval_Count, weight, due_Date) VALUES (4, 'Develop a simple landing page using HTML', 5, 4, 1.0, TIMESTAMP WITH TIME ZONE '2021-02-25T23:00:00Z');
+
+-- TEMPLATE LESSONS DONE
+INSERT INTO tb_lessons_done (lesson_id, user_id, offer_id) VALUES (1, 1, 1);
+INSERT INTO tb_lessons_done (lesson_id, user_id, offer_id) VALUES (2, 1, 1);
+
+
+
