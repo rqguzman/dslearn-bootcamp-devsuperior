@@ -52,5 +52,11 @@ INSERT INTO tb_task (id, description, question_Count, approval_Count, weight, du
 INSERT INTO tb_lessons_done (lesson_id, user_id, offer_id) VALUES (1, 1, 1);
 INSERT INTO tb_lessons_done (lesson_id, user_id, offer_id) VALUES (2, 1, 1);
 
+-- TEMPLATE NOTIFICATIONS
+INSERT INTO tb_notification (text, moment, is_Read, route, user_id) VALUES ('Task submission feedback #1: please revise', TIMESTAMP WITH TIME ZONE '2021-02-10T13:30:00Z', true, '/offers/1/resource/1/sections/1',1);
+INSERT INTO tb_notification (text, moment, is_Read, route, user_id) VALUES ('Task submission feedback #2: please revise', TIMESTAMP WITH TIME ZONE '2021-02-12T18:27:40Z', true, '/offers/1/resource/1/sections/1',1);
+INSERT INTO tb_notification (text, moment, is_Read, route, user_id) VALUES ('Task submission feedback: accepted', TIMESTAMP WITH TIME ZONE '2021-02-14T23:45:00Z', true, '/offers/1/resource/1/sections/1',1);
+
+
 
 
