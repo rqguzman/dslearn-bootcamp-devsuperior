@@ -32,7 +32,7 @@ public class UserService implements UserDetailsService {
         authService.validateSelfOrAdmin(id);
 
         Optional<User> obj = userRepository.findById(id);
-        User entity = obj.orElseThrow(() -> new ResourceNotFoundException("Entity not found"));
+        User entity = obj.orElseThrow(() -> new ResourceNotFoundException("[APPLICATION] >>> Entity not found"));
         return new UserDTO(entity);
     }
 
@@ -42,10 +42,10 @@ public class UserService implements UserDetailsService {
         User user = userRepository.findByEmail(username);
 
         if (user == null) {
-            logger.error("APPLICATION >> User not found " + username);
+            logger.error("[APPLICATION] >>> User not found " + username);
             throw new UsernameNotFoundException("Email not found");
         }
-        logger.info("APPLICATION >> User found: " + username);
+        logger.info("[APPLICATION] >>> User found: " + username);
         return user;
     }
 }

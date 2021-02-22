@@ -24,7 +24,7 @@ public class ResourceExceptionHandler {
         StandardError err = new StandardError();
         err.setTimestamp(Instant.now());
         err.setStatus(status.value());
-        err.setError("[Application] >>> Resource not found");
+        err.setError("[APPLICATION] >>> Resource not found");
         err.setMessage(e.getMessage());
         err.setPath(request.getRequestURI());
 
@@ -38,7 +38,7 @@ public class ResourceExceptionHandler {
         StandardError err = new StandardError();
         err.setTimestamp(Instant.now());
         err.setStatus(status.value());
-        err.setError("[Application] >>> Database integrity exception");
+        err.setError("[APPLICATION] >>> Database integrity exception");
         err.setMessage(e.getMessage());
         err.setPath(request.getRequestURI());
 
@@ -52,7 +52,7 @@ public class ResourceExceptionHandler {
         ValidationError err = new ValidationError();
         err.setTimestamp(Instant.now());
         err.setStatus(status.value());
-        err.setError("[Application] >>> Data validation exception");
+        err.setError("[APPLICATION] >>> Data validation exception");
         err.setMessage(e.getMessage());
         err.setPath(request.getRequestURI());
 
@@ -66,14 +66,14 @@ public class ResourceExceptionHandler {
     @ExceptionHandler(ForbiddenException.class)
     public ResponseEntity<OAuthCustomError> forbidden(ForbiddenException e, HttpServletRequest request){
 
-        OAuthCustomError err = new OAuthCustomError("[Application] >>> Forbidden", e.getMessage());
+        OAuthCustomError err = new OAuthCustomError("[APPLICATION] >>> Forbidden", e.getMessage());
         return ResponseEntity.status(HttpStatus.FORBIDDEN).body(err);
     }
 
     @ExceptionHandler(UnauthorizedException.class)
     public ResponseEntity<OAuthCustomError> unauthorized(UnauthorizedException e, HttpServletRequest request){
 
-        OAuthCustomError err = new OAuthCustomError("[Application] >>> Unauthorized", e.getMessage());
+        OAuthCustomError err = new OAuthCustomError("[APPLICATION] >>> Unauthorized", e.getMessage());
         return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body(err);
     }
 
