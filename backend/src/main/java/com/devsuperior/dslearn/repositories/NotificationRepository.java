@@ -13,10 +13,10 @@ public interface NotificationRepository extends JpaRepository<Notification, Long
 
     String myQuery = "SELECT obj FROM Notification obj WHERE " +
             "(obj.user = :user) AND " +
-            "(obj.read = :read) " +
+            "(:unreadOnly = false OR obj.read = false) " +
             "ORDER BY obj.moment DESC";
 
     @Query(myQuery)
-    Page<Notification> find(User user, boolean read, Pageable pageable);
+    Page<Notification> find(User user, boolean unreadOnly, Pageable pageable);
 
 }
