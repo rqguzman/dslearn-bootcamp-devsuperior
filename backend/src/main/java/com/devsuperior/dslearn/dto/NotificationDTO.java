@@ -18,11 +18,11 @@ public class NotificationDTO implements Serializable {
     public NotificationDTO() {
     }
 
-    public NotificationDTO(Long id, String text, Instant moment, boolean isRead, String route, Long userId) {
+    public NotificationDTO(Long id, String text, Instant moment, boolean read, String route, Long userId) {
         this.id = id;
         this.text = text;
         this.moment = moment;
-        this.read = isRead;
+        this.read = read;
         this.route = route;
         this.userId = userId;
     }

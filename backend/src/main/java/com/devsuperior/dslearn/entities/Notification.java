@@ -30,11 +30,11 @@ public class Notification implements Serializable {
     public Notification() {
     }
 
-    public Notification(Long id, String text, Instant moment, boolean isRead, String route, User user) {
+    public Notification(Long id, String text, Instant moment, boolean read, String route, User user) {
         this.id = id;
         this.text = text;
         this.moment = moment;
-        this.read = isRead;
+        this.read = read;
         this.route = route;
         this.user = user;
     }
